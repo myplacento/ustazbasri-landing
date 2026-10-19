@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ustaz Basri | Menjadi ayah. Dengan panduan.</title>
+<meta name="description" content="Pembimbing Menjadi Ayah. Sunnah, sains dan sistem untuk ayah yang nak bersedia sebelum anak lahir. 5,000+ keluarga diurus, 9 tahun Placento.">
+<meta property="og:title" content="Ustaz Basri | Menjadi ayah. Dengan panduan.">
+<meta property="og:description" content="Tak perlu sempurna. Cukup bersedia.">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --hijau:#1D4C3A; --hijau2:#2A6B52; --pink:#F392AD; --pink2:#99004A;
+  --krim:#F0E8D8; --bg:#F7F5F1; --card:#fff; --teks:#1f2937; --muted:#6b7280;
+  --line:#e5e7eb; --emas:#B8894A;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);color:var(--teks);line-height:1.65;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+
+/* TOP BAR */
+.bar{position:sticky;top:0;z-index:50;background:rgba(29,76,58,.97);backdrop-filter:blur(8px);
+  color:#fff;padding:12px 0;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.bar .nama{font-weight:700;font-size:15px;letter-spacing:.2px}
+.bar .nama small{display:block;font-weight:400;opacity:.75;font-size:11px;letter-spacing:.6px;text-transform:uppercase}
+.bar a.wa{background:var(--pink);color:#4a0026;font-weight:700;font-size:13px;padding:9px 16px;border-radius:99px;white-space:nowrap}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,var(--hijau) 0%,var(--hijau2) 100%);color:#fff;padding:56px 0 44px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;
+  background:radial-gradient(circle,rgba(243,146,173,.28),transparent 70%);top:-120px;right:-100px}
+.hero .kicker{display:inline-block;background:rgba(243,146,173,.18);border:1px solid rgba(243,146,173,.45);
+  color:#ffd9e5;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;padding:6px 14px;border-radius:99px;margin-bottom:20px}
+.hero h1{font-size:34px;line-height:1.2;font-weight:800;letter-spacing:-.5px;margin-bottom:14px}
+.hero h1 span{color:var(--pink)}
+.hero p.sub{font-size:17px;opacity:.92;margin-bottom:10px}
+.hero p.wedge{font-size:15px;opacity:.8;font-style:italic;margin-bottom:26px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:15px 26px;border-radius:12px;font-weight:700;font-size:16px;text-align:center;transition:transform .15s ease,box-shadow .15s ease}
+.btn:active{transform:scale(.98)}
+.btn-utama{background:var(--pink);color:#4a0026;box-shadow:0 6px 18px rgba(243,146,173,.35)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.4)}
+.hero .nota{margin-top:18px;font-size:13px;opacity:.75}
+
+/* SECTIONS */
+section{padding:48px 0}
+section.alt{background:var(--card)}
+h2{font-size:26px;line-height:1.25;font-weight:800;letter-spacing:-.3px;margin-bottom:14px;color:var(--hijau)}
+h2 .num{color:var(--pink2);font-size:15px;display:block;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;font-weight:700}
+p.badan{font-size:17px;color:#374151;margin-bottom:14px}
+.lead{font-size:18px;color:#4b5563;margin-bottom:22px}
+
+/* CERITA */
+.cerita-p{font-size:17px;color:#374151;margin-bottom:16px}
+.cerita-p strong{color:var(--hijau);font-weight:700}
+blockquote{border-left:4px solid var(--pink);background:var(--krim);padding:18px 20px;border-radius:0 12px 12px 0;
+  font-style:italic;color:#4a0026;margin:22px 0;font-size:17px}
+
+/* BUKTI */
+.bukti-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+.bukti{background:var(--krim);border-radius:14px;padding:18px 16px;text-align:center}
+.bukti b{display:block;font-size:26px;color:var(--hijau);line-height:1.1;font-weight:800}
+.bukti span{font-size:13px;color:#6b5b45;display:block;margin-top:4px}
+
+/* PINTU */
+.pintu{display:grid;gap:16px;margin-top:26px}
+.kad{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;
+  box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.kad .ikon{font-size:30px;margin-bottom:10px}
+.kad h3{font-size:20px;font-weight:800;color:var(--hijau);margin-bottom:8px}
+.kad p{font-size:15.5px;color:#4b5563;margin-bottom:16px}
+.kad a{display:inline-block;font-weight:700;color:var(--pink2);font-size:15px;border-bottom:2px solid var(--pink);padding-bottom:2px}
+
+/* LEAD MAGNET */
+.magnet{background:linear-gradient(150deg,var(--pink2) 0%,#6d0034 100%);color:#fff;border-radius:22px;
+  padding:32px 26px;text-align:center;margin-top:8px}
+.magnet h3{font-size:24px;font-weight:800;line-height:1.25;margin-bottom:12px}
+.magnet p{font-size:15.5px;opacity:.92;margin-bottom:20px}
+.magnet .btn-utama{background:#fff;color:var(--pink2);box-shadow:none}
+.magnet .kecil{font-size:12.5px;opacity:.75;margin-top:14px}
+
+/* TESTIMONI */
+.testi{background:var(--krim);border-radius:16px;padding:22px;margin-bottom:14px}
+.testi p{font-size:16px;color:#3f3526;font-style:italic;margin-bottom:12px}
+.testi .nama{font-size:13.5px;font-weight:700;color:var(--hijau);letter-spacing:.3px}
+.testi .nama span{display:block;font-weight:400;color:#8a7a63;font-size:12.5px;margin-top:2px}
+.bintang{color:var(--emas);font-size:14px;letter-spacing:2px;margin-bottom:10px}
+
+/* FAQ */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer;font-size:16px;color:var(--hijau);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";float:right;font-weight:700;color:var(--pink2)}
+details[open] summary:after{content:"–"}
+details p{margin-top:12px;font-size:15.5px;color:#4b5563}
+
+/* FOOTER */
+footer{background:var(--hijau);color:#d7e5dd;padding:40px 0 32px;font-size:14px}
+footer .nama{color:#fff;font-weight:800;font-size:18px;margin-bottom:6px}
+footer .tagline{font-size:13.5px;opacity:.8;margin-bottom:22px}
+footer .links{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+footer .links a{background:rgba(255,255,255,.1);border-radius:99px;padding:8px 16px;font-size:13.5px}
+footer .disklaim{font-size:12px;opacity:.6;line-height:1.6;border-top:1px solid rgba(255,255,255,.15);padding-top:18px}
+
+@media(min-width:640px){
+  .hero h1{font-size:44px}
+  .bukti-grid{grid-template-columns:repeat(3,1fr)}
+  .pintu{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="nama">Ustaz Basri<small>Sunnah Neuroparenting</small></div>
+    <a class="wa" href="https://wa.me/601156844450?text=Assalamualaikum%20Ustaz%2C%20saya%20dari%20laman%20web.">WhatsApp</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Pembimbing Menjadi Ayah</div>
+    <h1>Menjadi ayah.<br><span>Dengan panduan.</span></h1>
+    <p class="sub">Masyarakat sambut kelahiran bayi. Kita lupa sambut kelahiran seorang ayah.</p>
+    <p class="wedge">Tak perlu sempurna. Cukup bersedia.</p>
+    <div class="cta-row">
+      <a class="btn btn-utama" href="#ebook">Ambil ebook percuma</a>
+      <a class="btn btn-ghost" href="https://wa.me/601156844450?text=Assalamualaikum%20Ustaz%2C%20saya%20nak%20tanya%20pasal%20bimbingan.">Tanya Ustaz</a>
+    </div>
+    <p class="nota">5,000+ keluarga diurus · 9 tahun Placento · Anak seorang bidan</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">Cerita</span>Bunyi motor tengah malam</h2>
+    <p class="cerita-p">Itu bunyi yang saya kenal sejak kecil. Emak saya, <strong>Hajjah Rafeah</strong>, seorang bidan. Empat puluh tahun lebih dia sambut bayi, urus uri, sampai ke pagi.</p>
+    <p class="cerita-p">Saya besar dalam suasana itu. Lepas tu ke <strong>Al-Azhar</strong>, belajar pengajian Islam dan bahasa Arab. Balik, jadi ustaz. Sembilan tahun kebelakangan ini pula, saya uruskan uri dan urusan kelahiran untuk lebih <strong>5,000 keluarga</strong>.</p>
+    <p class="cerita-p">Tapi ada satu peristiwa yang mengubah cara saya fikir. Anak ketiga saya lahir sebagai anak ASD, dengan masalah jantung. <strong>Lapan bulan</strong> kami di wad.</p>
+    <blockquote>Dalam tempoh itu baru saya sedar. Orang ramai datang sambut bayi. Tapi tak seorang pun datang sambut sang ayah.</blockquote>
+    <p class="cerita-p">Sejak hari itu, kerja saya bukan sekadar uruskan uri. Kerja saya: <strong>bantu lelaki jadi ayah</strong>, sebelum anak lahir.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2><span class="num">Bukti</span>Bukan sekadar kata-kata</h2>
+    <p class="lead">Bila bercakap pasal kepercayaan, lebih baik tunjuk angka daripada bercerita panjang.</p>
+    <div class="bukti-grid">
+      <div class="bukti"><b>5,000+</b><span>keluarga diurus</span></div>
+      <div class="bukti"><b>40+</b><span>tahun warisan bidan</span></div>
+      <div class="bukti"><b>9</b><span>tahun Placento</span></div>
+      <div class="bukti"><b>86</b><span>ulasan Google 5 bintang</span></div>
+      <div class="bukti"><b>Al-Azhar</b><span>pengajian Islam &amp; Arab</span></div>
+      <div class="bukti"><b>Al-Hafiz</b><span>hafiz Al-Quran</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">Tiga pintu</span>Dari mana nak mula</h2>
+    <p class="lead">Pilih pintu yang paling dekat dengan keadaan Ustaz sekarang.</p>
+    <div class="pintu">
+      <div class="kad">
+        <div class="ikon">📚</div>
+        <h3>Belajar</h3>
+        <p>Bimbingan dan bahan bacaan untuk ayah yang nak bersedia sebelum, semasa dan selepas kelahiran.</p>
+        <a href="#ebook">Mula belajar</a>
+      </div>
+      <div class="kad">
+        <div class="ikon">🌿</div>
+        <h3>Kesihatan Keluarga</h3>
+        <p>Madu dan pemakanan sunnah untuk keluarga. Ilmu dulu, baru pilih produk.</p>
+        <a href="https://wa.me/601156844450?text=Saya%20nak%20tanya%20pasal%20kesihatan%20keluarga%20dan%20madu.">Tanya pasal madu</a>
+      </div>
+      <div class="kad">
+        <div class="ikon">🤝</div>
+        <h3>Bekalan Sunnah Team</h3>
+        <p>Untuk yang nak bina pendapatan sampingan dengan membawa produk kesihatan keluarga.</p>
+        <a href="https://wa.me/601156844450?text=Saya%20nak%20tahu%20pasal%20Bekalan%20Sunnah%20Team.">Kenal team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="ebook">
+  <div class="wrap">
+    <div class="magnet">
+      <h3>Beri Nama Anak Yang Terbaik</h3>
+      <p>Ebook percuma. 7 bab, 114 nama dengan makna dan panduan memilih. 60 muka surat, disusun supaya senang dibaca walaupun Ustaz sibuk.</p>
+      <!-- GANTI href dengan link borang BCL bila produk dah dicipta -->
+      <a class="btn btn-utama" href="#ebook" data-bcl="ebook-percuma">Download ebook percuma</a>
+      <p class="kecil">Percuma. Tiada bayaran, tiada iklan.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">Suara keluarga</span>Yang dah lalu jalan ini</h2>
+    <div class="testi">
+      <div class="bintang">★★★★★</div>
+      <p>"Ustaz Basri dan Placento sangat memudahkan urusan penanaman uri untuk kami yang duduk di bandar. Dah dua kali guna khidmat dari anak pertama dan kini anak kedua. Hassle free, ambil uri hari yang sama saya bersalin."</p>
+      <div class="nama">Farah Nadhirah<span>Pelanggan 2 kali · Google Review</span></div>
+    </div>
+    <div class="testi">
+      <div class="bintang">★★★★★</div>
+      <p>"Mesej pukul 9 pagi, pukul 10 dah collect, petang pukul 3 dah tanam siap dengan video. 100% efficient."</p>
+      <div class="nama">morningwalker<span>Google Review</span></div>
+    </div>
+    <div class="testi">
+      <div class="bintang">★★★★★</div>
+      <p>"Terima kasih Placento dan Ustaz Basri, permudahkan urusan menanam uri dan aqiqah anak saya. Kali ini sudah tiga kali menggunakan khidmat Placento."</p>
+      <div class="nama">mahathir yaseen<span>Pelanggan 3 kali termasuk aqiqah · Google Review</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2><span class="num">Soalan lazim</span>Sebelum Ustaz tanya</h2>
+    <details>
+      <summary>Ini untuk ayah sahaja ke?</summary>
+      <p>Terbuka untuk sesiapa. Tapi fokus isinya memang suami dan ayah, sebab di situlah paling banyak kelompongan yang saya jumpa dalam 5,000 keluarga diurus.</p>
+    </details>
+    <details>
+      <summary>Saya belum kahwin lagi, boleh ikut?</summary>
+      <p>Boleh, malah elok. Yang paling sibuk ialah masa bersedia. Bila dah masuk saatnya, kita jarang sempat nak belajar.</p>
+    </details>
+    <details>
+      <summary>Kena bayar untuk mula?</summary>
+      <p>Tidak. Ebook nama anak tu percuma. Kalau nak lebih dalam, baru ada bimbingan berbayar. Ustaz pilih sendiri.</p>
+    </details>
+    <details>
+      <summary>Ini rawatan perubatan ke?</summary>
+      <p>Bukan. Ini pendidikan dan bimbingan keluarga. Untuk diagnosis dan rawatan, sila rujuk doktor.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="nama">Ustaz Basri</div>
+    <div class="tagline">Pembimbing Menjadi Ayah · Sunnah Neuroparenting</div>
+    <div class="links">
+      <a href="https://www.threads.net/@ustaz.basri">Threads</a>
+      <a href="https://www.tiktok.com/@ustaz.basri">TikTok</a>
+      <a href="https://www.instagram.com/ustaz.basri">Instagram</a>
+      <a href="https://www.facebook.com/basrialahmad">Facebook</a>
+      <a href="https://wa.me/601156844450">WhatsApp</a>
+    </div>
+    <div class="disklaim">
+      © 2026 Ustaz Basri. Kandungan laman ini bersifat pendidikan dan bimbingan keluarga. Bukan rawatan perubatan, bukan fatwa rasmi. Untuk urusan perubatan sila layan nasihat doktor bertauliah.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
