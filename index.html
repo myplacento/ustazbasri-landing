@@ -110,6 +110,10 @@ blockquote{border-left:4px solid var(--pink);background:var(--krim);padding:18px
 .berjaya p{font-size:15px;opacity:.92;margin-bottom:16px}
 .berjaya .btn-utama{display:inline-block;padding:14px 26px;text-decoration:none;font-weight:800}
 .berjaya .kecil{font-size:12.5px;opacity:.72;margin-top:14px}
+.isi-ebook{list-style:none;margin:0 0 20px;padding:0}
+.isi-ebook li{position:relative;padding-left:24px;font-size:14.5px;opacity:.95;margin-bottom:9px;line-height:1.5}
+.isi-ebook li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--pink);font-weight:800}
+.isi-ebook b{color:#fff;font-weight:800}
 
 /* TESTIMONI */
 .testi{background:var(--krim);border-radius:16px;padding:22px;margin-bottom:14px}
@@ -274,7 +278,14 @@ footer .disklaim{font-size:12px;opacity:.6;line-height:1.6;border-top:1px solid 
   <div class="wrap">
     <div class="magnet">
       <h3>Beri Nama Anak Yang Terbaik</h3>
-      <p>Ebook percuma. 7 bab, 114 nama dengan makna dan panduan memilih. 138 halaman, disusun supaya senang dibaca walaupun awak sibuk.</p>
+      <p>Versi terkini. <strong>18 bab, 351 nama</strong> dengan makna dan panduan memilih. 138 halaman, disusun supaya senang dibaca walaupun awak sibuk.</p>
+      <ul class="isi-ebook">
+        <li><b>351 nama</b> lelaki dan perempuan, 10 kategori, maksud disemak silang</li>
+        <li><b>Hukum dan adab</b> memberi nama, termasuk nama yang dilarang</li>
+        <li><b>Cara bina kombinasi</b> nama yang sedap disebut dan membawa maksud</li>
+        <li><b>5 lampiran</b>: doa, hadis, senarai semak ke hospital, lembaran kerja pilih nama</li>
+        <li><b>Bonus</b>: jadual perkembangan bayi 0-12 bulan, pantun untuk ibu ayah</li>
+      </ul>
       <form class="borang" id="borang-ebook" method="POST" action="#">
         <div class="medan">
           <label for="nama">Nama awak</label>
