@@ -138,10 +138,33 @@ footer .links{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
 footer .links a{background:rgba(255,255,255,.1);border-radius:99px;padding:8px 16px;font-size:13.5px}
 footer .disklaim{font-size:12px;opacity:.6;line-height:1.6;border-top:1px solid rgba(255,255,255,.15);padding-top:18px}
 
+/* JALUR BUKTI (gaya Jenna Kutcher: angka besar bawah hero) */
+.jalur{background:var(--hijau);color:#fff;padding:28px 0}
+.jalur-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 12px;text-align:center}
+.jalur-grid b{display:block;font-size:26px;font-weight:800;color:var(--pink);line-height:1.1}
+.jalur-grid span{display:block;font-size:12.5px;opacity:.85;margin-top:4px;line-height:1.35}
+.jalur-kecil{text-align:center;font-size:11.5px;letter-spacing:1.6px;text-transform:uppercase;opacity:.6;margin-top:22px}
+/* SAYA (gaya Marie Forleo: "I'm Marie.") */
+.saya{font-size:19px;font-weight:700;color:var(--hijau);line-height:1.55;margin-bottom:18px;
+  padding-left:16px;border-left:4px solid var(--pink)}
+/* KAD PINTU */
+.kad .untuk{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;
+  color:var(--pink2);background:#FDF2F6;border-radius:99px;padding:4px 11px;margin-bottom:10px}
+.kad a{display:inline-block;font-weight:800;color:var(--pink2);text-decoration:none;
+  border-bottom:2px solid var(--pink);padding-bottom:1px}
+/* CTA PENUTUP */
+.penutup{background:linear-gradient(160deg,var(--hijau) 0%,var(--hijau2) 100%);color:#fff;
+  padding:46px 0;text-align:center}
+.penutup h2{color:#fff;font-size:24px;margin-bottom:10px}
+.penutup p{font-size:15.5px;opacity:.9;margin-bottom:22px;max-width:460px;margin-left:auto;margin-right:auto}
+.penutup .cta-row{justify-content:center}
+
 @media(min-width:640px){
   .hero h1{font-size:44px}
   .bukti-grid{grid-template-columns:repeat(3,1fr)}
   .pintu{grid-template-columns:repeat(3,1fr)}
+  .jalur-grid{grid-template-columns:repeat(4,1fr)}
+  .jalur-grid b{font-size:32px}
 }
 </style>
 </head>
@@ -158,13 +181,12 @@ footer .disklaim{font-size:12px;opacity:.6;line-height:1.6;border-top:1px solid 
   <div class="wrap">
     <div class="kicker">Sunnah Neuroparenting</div>
     <h1>Menjadi ibu ayah.<br><span>Dengan panduan.</span></h1>
-    <p class="sub">Masyarakat sambut kelahiran bayi. Kita lupa sambut kelahiran seorang ibu dan ayah.</p>
+    <p class="sub">Awak nak bersedia. Tapi sekarang, terasa banyak sangat yang belum tahu.</p>
     <p class="wedge">Tak perlu sempurna. Cukup bersedia.</p>
     <div class="cta-row">
       <a class="btn btn-utama" href="#ebook">Ambil ebook percuma</a>
       <a class="btn btn-ghost" href="https://wa.me/601156844450?text=Assalamualaikum%2C%20saya%20nak%20tanya%20pasal%20bimbingan.">Tanya saya</a>
     </div>
-    <p class="nota">5,000+ keluarga diurus · 9 tahun Placento · Anak seorang bidan</p>
     <div class="hero-img">
       <picture>
         <source srcset="assets/portrait.webp" type="image/webp">
@@ -174,9 +196,22 @@ footer .disklaim{font-size:12px;opacity:.6;line-height:1.6;border-top:1px solid 
   </div>
 </header>
 
+<section class="jalur">
+  <div class="wrap">
+    <div class="jalur-grid">
+      <div><b>5,000+</b><span>keluarga diurus</span></div>
+      <div><b>9</b><span>tahun Placento</span></div>
+      <div><b>86</b><span>ulasan Google 5 bintang</span></div>
+      <div><b>40+</b><span>tahun warisan bidan</span></div>
+    </div>
+    <div class="jalur-kecil">Al-Azhar · Al-Hafiz · Sunnah × Sains</div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <h2><span class="num">Cerita</span>Bunyi motor tengah malam</h2>
+    <p class="saya">Saya Basri. Sembilan tahun urus uri, lebih 5,000 keluarga. Tapi cerita ni mula di rumah, dengan emak saya.</p>
     <p class="cerita-p">Itu bunyi yang saya kenal sejak kecil. Emak saya, <strong>Hajjah Rafeah</strong>, seorang bidan. Empat puluh tahun lebih dia sambut bayi, urus uri, sampai ke pagi.</p>
     <figure class="gambar">
       <picture>
@@ -205,21 +240,6 @@ footer .disklaim{font-size:12px;opacity:.6;line-height:1.6;border-top:1px solid 
       <h3 style="font-size:20px;font-weight:800;color:var(--pink2);margin-bottom:10px">Untuk isteri yang baca ni</h3>
       <p style="font-size:16.5px;color:#4b3a41;margin-bottom:18px">Kalau awak mula baca sebab nak suami lebih hadir di rumah, awak tak tersalah tempat. Ramai yang mula dari sini. Hantar satu post pada dia, atau baca berdua. Perubahan biasanya mula dari seorang yang peduli.</p>
       <a class="btn btn-utama" style="font-size:15px;padding:13px 22px" href="https://wa.me/?text=Assalamualaikum.%20Baca%20ni%2C%20untuk%20kita%20berdua.%20https%3A%2F%2Fmyplacento.github.io%2Fustazbasri-landing%2F">Hantar pada suami</a>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2><span class="num">Bukti</span>Bukan sekadar kata-kata</h2>
-    <p class="lead">Bila bercakap pasal kepercayaan, lebih baik tunjuk angka daripada bercerita panjang.</p>
-    <div class="bukti-grid">
-      <div class="bukti"><b>5,000+</b><span>keluarga diurus</span></div>
-      <div class="bukti"><b>40+</b><span>tahun warisan bidan</span></div>
-      <div class="bukti"><b>9</b><span>tahun Placento</span></div>
-      <div class="bukti"><b>86</b><span>ulasan Google 5 bintang</span></div>
-      <div class="bukti"><b>Al-Azhar</b><span>pengajian Islam &amp; Arab</span></div>
-      <div class="bukti"><b>Al-Hafiz</b><span>hafiz Al-Quran</span></div>
     </div>
   </div>
 </section>
@@ -253,22 +273,22 @@ footer .disklaim{font-size:12px;opacity:.6;line-height:1.6;border-top:1px solid 
     <p class="lead">Pilih pintu yang paling dekat dengan keadaan awak sekarang.</p>
     <div class="pintu">
       <div class="kad">
-        <div class="ikon">📚</div>
-        <h3>Belajar</h3>
-        <p>Bimbingan dan bahan bacaan untuk awak yang nak bersedia sebelum, semasa dan selepas kelahiran.</p>
-        <a href="#ebook">Mula belajar</a>
+        <div class="untuk">Paling ramai mula di sini</div>
+        <h3>Belajar jadi ibu ayah</h3>
+        <p>Faham apa yang nak jadi, sebelum hari tu tiba. Dari pilih nama sampai bersedia ke hospital.</p>
+        <a href="#ebook">Mula dengan ebook &rarr;</a>
       </div>
       <div class="kad">
-        <div class="ikon">🌿</div>
-        <h3>Kesihatan Keluarga</h3>
-        <p>Madu dan pemakanan sunnah untuk keluarga. Ilmu dulu, baru pilih produk.</p>
-        <a href="https://wa.me/601156844450?text=Saya%20nak%20tanya%20pasal%20kesihatan%20keluarga%20dan%20madu.">Tanya pasal madu</a>
+        <div class="untuk">Untuk seisi rumah</div>
+        <h3>Jaga kesihatan keluarga</h3>
+        <p>Madu dan pemakanan sunnah. Ilmu dulu, baru pilih. Bukan jual barang, tapi faham dulu apa keluarga awak perlukan.</p>
+        <a href="https://wa.me/601156844450?text=Saya%20nak%20tanya%20pasal%20kesihatan%20keluarga%20dan%20madu.">Tanya pasal madu &rarr;</a>
       </div>
       <div class="kad">
-        <div class="ikon">🤝</div>
-        <h3>Bekalan Sunnah Team</h3>
-        <p>Untuk awak yang nak bina pendapatan sampingan dengan membawa produk kesihatan keluarga.</p>
-        <a href="https://wa.me/601156844450?text=Saya%20nak%20tahu%20pasal%20Bekalan%20Sunnah%20Team.">Kenal team</a>
+        <div class="untuk">Untuk yang nak bina pendapatan</div>
+        <h3>Bawa manfaat, bina pendapatan</h3>
+        <p>Untuk awak yang nak pendapatan sampingan sambil membawa produk kesihatan keluarga.</p>
+        <a href="https://wa.me/601156844450?text=Saya%20nak%20tahu%20pasal%20Bekalan%20Sunnah%20Team.">Kenal team &rarr;</a>
       </div>
     </div>
   </div>
@@ -347,6 +367,17 @@ footer .disklaim{font-size:12px;opacity:.6;line-height:1.6;border-top:1px solid 
       <summary>Ini rawatan perubatan ke?</summary>
       <p>Bukan. Ini pendidikan dan bimbingan keluarga. Untuk diagnosis dan rawatan, sila rujuk doktor bertauliah.</p>
     </details>
+  </div>
+</section>
+
+<section class="penutup">
+  <div class="wrap">
+    <h2>Nak mula dari mana?</h2>
+    <p>Ambil ebook percuma dulu. Kalau ada apa-apa nak tanya, saya balas sendiri.</p>
+    <div class="cta-row">
+      <a class="btn btn-utama" href="#ebook">Ambil ebook percuma</a>
+      <a class="btn btn-ghost" href="https://wa.me/601156844450?text=Assalamualaikum%2C%20saya%20dari%20laman%20web.">WhatsApp saya</a>
+    </div>
   </div>
 </section>
 
