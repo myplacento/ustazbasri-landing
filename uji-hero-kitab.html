@@ -37,8 +37,8 @@ a{color:inherit}
   margin:22px 0 0;opacity:.55}
 
 /* hero: dua kolum, teks dulu */
-.hero{padding:46px 0 40px}
-.hero-grid{display:grid;gap:34px}
+.hero{padding:54px 0 50px}
+.hero-grid{display:block;max-width:640px}
 .kicker{font-size:10.5px;font-weight:800;letter-spacing:3.2px;text-transform:uppercase;
   color:var(--emas);margin-bottom:18px}
 .salam{font-size:15px;color:var(--muted);margin-bottom:10px;font-style:italic}
@@ -54,10 +54,11 @@ a{color:inherit}
 
 /* potret kecil, hormat */
 .potret{margin:0}
-.potret img{width:100%;max-width:330px;height:auto;display:block;border-radius:4px;
+.potret img{width:100%;max-width:380px;height:auto;display:block;border-radius:4px;
   border:1px solid var(--line);filter:saturate(.96)}
+.potret{margin:22px 0 6px}
 .potret figcaption{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:10px;
-  max-width:330px;line-height:1.5}
+  max-width:380px;line-height:1.5}
 
 /* jalur angka: teks sahaja, bukan blok besar */
 .jalur{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin-top:10px}
@@ -83,7 +84,7 @@ a{color:inherit}
 @media(min-width:760px){
   .bar{padding:26px 0 0}
   .hero{padding:64px 0 54px}
-  .hero-grid{grid-template-columns:1fr 300px;gap:56px;align-items:start}
+  .hero-grid{max-width:660px}
   .cerita{padding:56px 0}
 }
 </style>
@@ -114,10 +115,6 @@ a{color:inherit}
           <a class="pakedua" href="https://wa.me/601156844450?text=Assalamualaikum%2C%20saya%20nak%20tanya%20pasal%20bimbingan.">atau tanya saya</a>
         </div>
       </div>
-      <figure class="potret">
-        <img src="assets/hospital.webp" alt="Ustaz Basri di hospital" width="760" height="570">
-        <figcaption>Di hospital, tempat paling banyak ajar saya erti sabar.</figcaption>
-      </figure>
     </div>
   </div>
 </section>
@@ -133,6 +130,10 @@ a{color:inherit}
     <h2><span class="num">Cerita</span>Bunyi motor tengah malam</h2>
     <p class="saya">Saya Basri. Sembilan tahun urus uri, lebih 5,000 keluarga. Tapi cerita ni mula di rumah, dengan emak saya.</p>
     <p>Emak saya, Hajjah Rafeah, seorang bidan. Empat puluh tahun lebih dia sambut bayi, urus uri, sampai ke pagi. Saya besar dalam suasana itu. Lepas tu ke Al-Azhar, belajar pengajian Islam dan bahasa Arab.</p>
+    <figure class="potret">
+      <img src="assets/emak.webp" alt="Ustaz Basri bersama emaknya, Hajjah Rafeah" width="900" height="1125">
+      <figcaption>Emak saya, Hajjah Rafeah. Lebih empat puluh tahun sambut bayi.</figcaption>
+    </figure>
     <p>Tapi ada satu peristiwa yang mengubah cara saya fikir. Anak pertama saya lahir dengan komplikasi jantung berlubang. Lapan bulan kami berkampung dalam wad. Dalam tempoh itu baru saya sedar: orang ramai datang sambut bayi, tapi jarang yang datang sambut ibu dan ayahnya.</p>
   </div>
 </section>
