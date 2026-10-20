@@ -108,6 +108,62 @@ a{color:inherit}
   .pintu-grid article:last-child{border-bottom:1px solid var(--line)}
 }
 
+
+/* blok untuk isteri */
+.isteri{padding:4px 0 30px}
+.isteri .kotak{border-left:2px solid var(--emas);padding:2px 0 2px 18px;max-width:620px}
+.isteri h3{font-family:Georgia,serif;font-size:21px;color:var(--dakwat);margin-bottom:9px;font-weight:700}
+.isteri p{font-size:16px;color:#46524b;margin-bottom:14px}
+.isteri a{font-size:14px;font-weight:800;color:var(--hijau);text-decoration:none;
+  border-bottom:1px solid var(--emas);padding-bottom:2px}
+
+/* penerangan ebook + borang */
+.ebook-buku{padding:12px 0 34px}
+.ebook-buku h2{font-family:Georgia,serif;font-size:clamp(22px,5.5vw,28px);color:var(--dakwat);
+  line-height:1.25;margin-bottom:10px;font-weight:700}
+.ebook-buku .num{display:block;font-family:-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--emas);font-weight:800;margin-bottom:10px}
+.ebook-buku .intro{font-size:16.5px;color:#42504a;margin-bottom:18px;max-width:560px}
+.senarai-ebook{list-style:none;margin:0 0 26px;padding:0;max-width:560px}
+.senarai-ebook li{position:relative;padding-left:26px;font-size:15.5px;color:#42504a;margin-bottom:11px;line-height:1.6}
+.senarai-ebook li::before{content:"\2014";position:absolute;left:0;top:0;color:var(--emas);font-weight:700}
+.senarai-ebook b{color:var(--dakwat);font-weight:800}
+.borang{margin-top:6px;max-width:440px}
+.medan{margin-bottom:14px}
+.medan label{display:block;font-size:10.5px;letter-spacing:1.8px;text-transform:uppercase;
+  color:var(--muted);font-weight:800;margin-bottom:6px}
+.medan label span{letter-spacing:0;text-transform:none;font-weight:600;font-size:11.5px}
+.medan input{width:100%;padding:13px 15px;border:1px solid var(--line);background:#fff;border-radius:3px;
+  font-size:16px;font-family:inherit;color:var(--teks);-webkit-appearance:none}
+.medan input:focus{outline:none;border-color:var(--emas);box-shadow:0 0 0 3px rgba(184,137,74,.14)}
+.borang button{margin-top:8px;background:var(--hijau);color:#fff;border:0;border-radius:3px;
+  padding:15px 26px;font-size:15.5px;font-weight:800;font-family:inherit;cursor:pointer;width:100%}
+.borang button:hover{background:var(--hijau2)}
+.borang .kecil{font-size:12.5px;color:var(--muted);margin-top:12px;line-height:1.6}
+.berjaya{border:1px solid var(--emas);background:#fff;padding:24px 22px;border-radius:4px;margin-top:20px}
+.berjaya .ikon-ok{width:34px;height:34px;border:1px solid var(--emas);border-radius:50%;color:var(--emas);
+  font-size:17px;font-weight:800;line-height:32px;text-align:center;margin-bottom:12px}
+.berjaya h4{font-family:Georgia,serif;font-size:19px;color:var(--dakwat);margin-bottom:6px}
+.berjaya p{font-size:15px;color:#46524b;margin-bottom:14px}
+.berjaya a{font-size:15px;font-weight:800;color:var(--hijau);text-decoration:none;
+  border-bottom:2px solid var(--emas);padding-bottom:2px}
+.berjaya .kecil{font-size:12.5px;color:var(--muted);margin-top:14px;line-height:1.6}
+
+/* testimoni */
+.testi-buku{padding:10px 0 34px}
+.testi-buku h2{font-family:Georgia,serif;font-size:clamp(22px,5.5vw,28px);color:var(--dakwat);
+  line-height:1.25;margin-bottom:6px;font-weight:700}
+.testi-buku .num{display:block;font-family:-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--emas);font-weight:800;margin-bottom:10px}
+.testi-item{border-top:1px solid var(--line);padding:22px 0}
+.testi-item:last-child{border-bottom:1px solid var(--line)}
+.testi-item .bintang{color:var(--emas);letter-spacing:4px;font-size:12.5px;margin-bottom:9px}
+.testi-item p{font-family:Georgia,serif;font-style:italic;font-size:16.5px;color:#3c4741;
+  line-height:1.7;margin-bottom:12px;max-width:660px}
+.testi-item .nama{font-size:12.5px;font-weight:800;letter-spacing:.5px;color:var(--dakwat)}
+.testi-item .nama span{display:block;font-weight:600;letter-spacing:0;text-transform:none;
+  color:var(--muted);font-size:12px;margin-top:3px}
+
 /* galeri */
 .galeri-buku{padding:8px 0 30px}
 .galeri-grid{display:grid;gap:26px}
@@ -164,7 +220,7 @@ a{color:inherit}
   </div>
 </section>
 
-<section class="cerita" id="ebook">
+<section class="cerita">
   <div class="wrap">
     <h2><span class="num">Cerita</span>Bunyi motor tengah malam</h2>
     <p class="saya">Saya Basri. Sembilan tahun urus uri, lebih 5,000 keluarga. Tapi cerita ni mula di rumah, dengan emak saya.</p>
@@ -174,6 +230,16 @@ a{color:inherit}
       <figcaption>Emak saya, Hajjah Rafeah. Lebih empat puluh tahun sambut bayi.</figcaption>
     </figure>
     <p>Tapi ada satu peristiwa yang mengubah cara saya fikir. Anak pertama saya lahir dengan komplikasi jantung berlubang. Lapan bulan kami berkampung dalam wad. Dalam tempoh itu baru saya sedar: orang ramai datang sambut bayi, tapi jarang yang datang sambut ibu dan ayahnya.</p>
+  </div>
+</section>
+
+<section class="isteri">
+  <div class="wrap">
+    <div class="kotak">
+      <h3>Untuk isteri yang baca ni</h3>
+      <p>Kalau awak mula baca sebab nak suami lebih hadir di rumah, awak tak tersalah tempat. Ramai yang mula dari sini. Hantar satu post pada dia, atau baca berdua. Perubahan biasanya mula dari seorang yang peduli.</p>
+      <a href="https://wa.me/?text=Assalamualaikum.%20Baca%20ni%2C%20untuk%20kita%20berdua.%20https%3A%2F%2Fmyplacento.github.io%2Fustazbasri-landing%2F">Hantar pada suami &rarr;</a>
+    </div>
   </div>
 </section>
 
@@ -204,6 +270,37 @@ a{color:inherit}
   </div>
 </section>
 
+<section class="ebook-buku" id="ebook">
+  <div class="wrap">
+    <h2><span class="num">Ebook percuma</span>Beri Nama Anak Yang Terbaik</h2>
+    <p class="intro">Versi terkini. <b>18 bab, 351 nama</b> dengan makna dan panduan memilih. 138 halaman, disusun supaya senang dibaca walaupun awak sibuk.</p>
+    <ul class="senarai-ebook">
+      <li><b>351 nama</b> lelaki dan perempuan, 10 kategori, maksud disemak silang</li>
+      <li><b>Hukum dan adab</b> memberi nama, termasuk nama yang dilarang</li>
+      <li><b>Cara bina kombinasi</b> nama yang sedap disebut dan membawa maksud</li>
+      <li><b>5 lampiran</b>: doa, hadis, senarai semak ke hospital, lembaran kerja pilih nama</li>
+      <li><b>Bonus</b>: jadual perkembangan bayi 0-12 bulan, pantun untuk ibu ayah</li>
+    </ul>
+    <form class="borang" id="borang-ebook" method="POST" action="#">
+      <div class="medan">
+        <label for="nama">Nama awak</label>
+        <input id="nama" name="nama" type="text" required placeholder="Nama penuh" autocomplete="name">
+      </div>
+      <div class="medan">
+        <label for="emel">Emel</label>
+        <input id="emel" name="emel" type="email" required placeholder="nama@emel.com" autocomplete="email" inputmode="email">
+      </div>
+      <div class="medan">
+        <label for="wa">WhatsApp <span>(pilihan)</span></label>
+        <input id="wa" name="wa" type="tel" placeholder="0123456789" autocomplete="tel" inputmode="tel">
+      </div>
+      <input type="hidden" name="sumber" value="landing-ebook">
+      <button type="submit">Hantar dan ambil ebook</button>
+      <p class="kecil">Percuma. Link download masuk ke emel awak. Tiada iklan, tiada spam.</p>
+    </form>
+  </div>
+</section>
+
 <section class="galeri-buku">
   <div class="wrap">
     <div class="galeri-grid">
@@ -219,6 +316,27 @@ a{color:inherit}
   </div>
 </section>
 
+<section class="testi-buku">
+  <div class="wrap">
+    <h2><span class="num">Suara keluarga</span>Yang dah lalu jalan ini</h2>
+    <div class="testi-item">
+      <div class="bintang">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>&ldquo;Ustaz Basri dan Placento sangat memudahkan urusan penanaman uri untuk kami yang duduk di bandar. Dah dua kali guna khidmat dari anak pertama dan kini anak kedua. Hassle free, ambil uri hari yang sama saya bersalin.&rdquo;</p>
+      <div class="nama">Farah Nadhirah<span>Pelanggan 2 kali &middot; Google Review</span></div>
+    </div>
+    <div class="testi-item">
+      <div class="bintang">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>&ldquo;Mesej pukul 9 pagi, pukul 10 dah collect, petang pukul 3 dah tanam siap dengan video. 100% efficient.&rdquo;</p>
+      <div class="nama">morningwalker<span>Google Review</span></div>
+    </div>
+    <div class="testi-item">
+      <div class="bintang">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p>&ldquo;Terima kasih Placento dan Ustaz Basri, permudahkan urusan menanam uri dan aqiqah anak saya. Kali ini sudah tiga kali menggunakan khidmat Placento.&rdquo;</p>
+      <div class="nama">mahathir yaseen<span>Pelanggan 3 kali termasuk aqiqah &middot; Google Review</span></div>
+    </div>
+  </div>
+</section>
+
 <section class="penutup">
   <div class="wrap">
     <h2>Nak mula dari mana?</h2>
@@ -229,6 +347,56 @@ a{color:inherit}
     </div>
   </div>
 </section>
+
+<script>
+/* BORANG EBOOK — URL_SCRIPT diisi bila Apps Script dah deploy */
+var URL_SCRIPT = "";
+var EBOOK_PDF  = "assets/Ebook_Beri_Nama_Anak.pdf";
+var WA_NOMBOR  = "601156844450";
+
+(function () {
+  var f = document.getElementById("borang-ebook");
+  if (!f) return;
+  function bersih(s) { return (s || "").replace(/[<>&"']/g, "").trim(); }
+
+  f.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var nama = bersih(f.nama.value), emel = bersih(f.emel.value), wa = bersih(f.wa.value);
+    if (!nama || !emel) { return; }
+    var badan = "nama=" + encodeURIComponent(nama) + "&emel=" + encodeURIComponent(emel) +
+                "&wa=" + encodeURIComponent(wa) + "&sumber=" + encodeURIComponent("landing-ebook");
+
+    if (URL_SCRIPT) {
+      var hantar = false;
+      try {
+        hantar = navigator.sendBeacon(URL_SCRIPT,
+          new Blob([badan], { type: "application/x-www-form-urlencoded;charset=UTF-8" }));
+      } catch (e) { hantar = false; }
+      if (!hantar) {
+        try {
+          fetch(URL_SCRIPT, { method: "POST", mode: "no-cors",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: badan });
+        } catch (e) {}
+      }
+    } else {
+      var mesej = "Assalamualaikum, saya nak ebook nama anak.\nNama: " + nama +
+                  "\nEmel: " + emel + (wa ? "\nWhatsApp: " + wa : "");
+      window.open("https://wa.me/" + WA_NOMBOR + "?text=" + encodeURIComponent(mesej), "_blank");
+    }
+
+    var pendek = nama.split(" ")[0];
+    f.outerHTML = '<div class="berjaya">' +
+      '<div class="ikon-ok">&#10003;</div>' +
+      '<h4>Terima kasih, ' + pendek + '.</h4>' +
+      '<p>Ebook awak dah sedia. Tekan pautan di bawah.</p>' +
+      '<a href="' + EBOOK_PDF + '" download>Muat turun ebook (PDF)</a>' +
+      '<p class="kecil">Saya juga hantar link ni ke emel awak. Kalau tak jumpa, tengok folder spam.</p>' +
+      '</div>';
+    var seksyen = document.getElementById("ebook");
+    if (seksyen) seksyen.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+})();
+</script>
 
 </body>
 </html>
