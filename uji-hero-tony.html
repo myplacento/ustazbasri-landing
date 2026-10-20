@@ -92,10 +92,12 @@ a{color:inherit}
      Jadi: latar kabur + foto tajam di kanan, teks di kiri */
   .hero .bg-blur{display:block;position:absolute;inset:-40px;
     background:url('assets/placento.webp') center/cover;
-    filter:blur(34px) brightness(.38) saturate(.9);transform:scale(1.12)}
-  .hero .bg{left:auto;right:0;width:60%;object-fit:contain;object-position:right bottom;transform:none}
-  .hero .lapis{background:linear-gradient(90deg,rgba(9,30,22,.96) 0%,rgba(9,30,22,.92) 42%,
-    rgba(9,30,22,.55) 64%,rgba(9,30,22,.22) 100%)}
+    filter:blur(34px) brightness(.5) saturate(.95);transform:scale(1.12)}
+  .hero .bg{left:auto;right:0;width:60%;object-fit:contain;object-position:right bottom;transform:none;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 14%,#000 100%);
+    mask-image:linear-gradient(90deg,transparent 0%,#000 14%,#000 100%)}
+  .hero .lapis{background:linear-gradient(90deg,rgba(9,30,22,.90) 0%,rgba(9,30,22,.78) 44%,
+    rgba(9,30,22,.42) 66%,rgba(9,30,22,.12) 100%)}
   .hero .dalam{padding:0 0 60px}
   .hero .dalam .wrap{position:relative}
   .hero .sub{max-width:470px}
