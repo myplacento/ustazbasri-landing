@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>UJIAN C — Bahasa visual pendakwah</title>
+<style>
+:root{
+  --hijau:#1D4C3A; --hijau2:#2A6B52; --pink:#F392AD; --pink2:#99004A;
+  --krim:#F0E8D8; --kertas:#FBF8F2; --emas:#B8894A; --dakwat:#1B3B2E;
+  --teks:#2f3a34; --muted:#7a6d5c; --line:#E3D9C6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--kertas);color:var(--teks);line-height:1.72;font-size:17px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px}
+.serif{font-family:Georgia,"Times New Roman",serif}
+
+/* notis ujian */
+.nota-uji{background:#FFF4D6;border-bottom:1px solid #E9D08A;color:#6b5320;font-size:12.5px;
+  padding:8px 22px;text-align:center;font-weight:600}
+
+/* bar: ringan, tanpa pil */
+.bar{padding:20px 0 0}
+.bar .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:14px}
+.bar .nama{font-family:Georgia,serif;font-size:21px;color:var(--dakwat);font-weight:700;letter-spacing:.2px}
+.bar .nama small{display:block;font-family:-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:9.5px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--emas);margin-top:4px}
+.bar a.wa{color:var(--hijau);text-decoration:none;font-size:13.5px;font-weight:700;
+  border-bottom:1px solid var(--emas);padding-bottom:2px;white-space:nowrap}
+
+/* garisan emas */
+.garis{height:1px;background:linear-gradient(90deg,transparent,var(--emas),transparent);
+  margin:22px 0 0;opacity:.55}
+
+/* hero: dua kolum, teks dulu */
+.hero{padding:46px 0 40px}
+.hero-grid{display:grid;gap:34px}
+.kicker{font-size:10.5px;font-weight:800;letter-spacing:3.2px;text-transform:uppercase;
+  color:var(--emas);margin-bottom:18px}
+.salam{font-size:15px;color:var(--muted);margin-bottom:10px;font-style:italic}
+.hero h1{font-family:Georgia,"Times New Roman",serif;color:var(--dakwat);
+  font-size:clamp(30px,7.5vw,46px);line-height:1.14;font-weight:700;letter-spacing:-.6px;margin-bottom:18px}
+.hero h1 em{font-style:italic;color:var(--hijau2)}
+.hero .sub{font-size:16.5px;color:#42504a;max-width:470px;margin-bottom:26px}
+.hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:20px}
+.pautama{display:inline-block;color:var(--hijau);text-decoration:none;font-weight:800;font-size:16px;
+  border-bottom:2px solid var(--emas);padding-bottom:3px}
+.pakedua{display:inline-block;color:var(--muted);text-decoration:none;font-size:14.5px;
+  border-bottom:1px solid var(--line);padding-bottom:3px}
+
+/* potret kecil, hormat */
+.potret{margin:0}
+.potret img{width:100%;max-width:300px;height:auto;display:block;border-radius:4px;
+  border:1px solid var(--line);filter:saturate(.96)}
+.potret figcaption{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:10px;
+  max-width:300px;line-height:1.5}
+
+/* jalur angka: teks sahaja, bukan blok besar */
+.jalur{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin-top:10px}
+.jalur p{font-size:13.5px;color:var(--muted);text-align:center;letter-spacing:.3px}
+.jalur b{color:var(--dakwat);font-weight:800}
+.jalur .pemisah{color:var(--emas);margin:0 9px}
+
+/* blok cerita */
+.cerita{padding:44px 0}
+.cerita h2{font-family:Georgia,serif;font-size:clamp(22px,5.5vw,28px);color:var(--dakwat);
+  line-height:1.25;margin-bottom:14px;font-weight:700}
+.cerita .num{display:block;font-family:-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--emas);font-weight:800;margin-bottom:10px}
+.cerita p{font-size:16.5px;color:#3c4741;margin-bottom:14px;max-width:620px}
+.saya{font-family:Georgia,serif;font-size:18.5px;color:var(--dakwat);line-height:1.6;
+  margin-bottom:20px;max-width:620px;padding-left:16px;border-left:2px solid var(--emas)}
+
+/* penutup: tenang, bukan jeritan */
+.penutup{border-top:1px solid var(--line);padding:40px 0 54px;margin-top:6px}
+.penutup h2{font-family:Georgia,serif;font-size:22px;color:var(--dakwat);margin-bottom:8px}
+.penutup p{font-size:15px;color:var(--muted);margin-bottom:20px;max-width:520px}
+
+@media(min-width:760px){
+  .bar{padding:26px 0 0}
+  .hero{padding:64px 0 54px}
+  .hero-grid{grid-template-columns:1fr 300px;gap:56px;align-items:start}
+  .cerita{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="nota-uji">UJIAN C &middot; bahasa visual pendakwah &middot; bukan page rasmi</div>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="nama">Ustaz Basri<small>Sunnah Neuroparenting</small></div>
+    <a class="wa" href="https://wa.me/601156844450?text=Assalamualaikum%2C%20saya%20dari%20laman%20web.">WhatsApp</a>
+  </div>
+</div>
+
+<div class="wrap"><div class="garis"></div></div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="kicker">Pembimbing Menjadi Ayah</div>
+        <p class="salam">Assalamualaikum warahmatullah.</p>
+        <h1>Menjadi ibu ayah.<br><em>Dengan panduan.</em></h1>
+        <p class="sub">Awak nak bersedia. Tapi sekarang, terasa banyak sangat yang belum tahu. Saya ajar sedikit-sedikit, dari pengalaman sembilan tahun urus uri dan lebih 5,000 keluarga.</p>
+        <div class="cta">
+          <a class="pautama" href="#ebook">Baca ebook percuma &rarr;</a>
+          <a class="pakedua" href="https://wa.me/601156844450?text=Assalamualaikum%2C%20saya%20nak%20tanya%20pasal%20bimbingan.">atau tanya saya</a>
+        </div>
+      </div>
+      <figure class="potret">
+        <img src="assets/portrait.webp" alt="Ustaz Basri" width="900" height="1125">
+        <figcaption>Basri. Anak seorang bidan, sembilan tahun urus uri.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="jalur">
+  <div class="wrap">
+    <p><b>5,000+</b> keluarga<span class="pemisah">&middot;</span><b>9</b> tahun Placento<span class="pemisah">&middot;</span><b>86</b> ulasan Google 5 bintang<span class="pemisah">&middot;</span>Al-Azhar<span class="pemisah">&middot;</span>Al-Hafiz</p>
+  </div>
+</section>
+
+<section class="cerita" id="ebook">
+  <div class="wrap">
+    <h2><span class="num">Cerita</span>Bunyi motor tengah malam</h2>
+    <p class="saya">Saya Basri. Sembilan tahun urus uri, lebih 5,000 keluarga. Tapi cerita ni mula di rumah, dengan emak saya.</p>
+    <p>Emak saya, Hajjah Rafeah, seorang bidan. Empat puluh tahun lebih dia sambut bayi, urus uri, sampai ke pagi. Saya besar dalam suasana itu. Lepas tu ke Al-Azhar, belajar pengajian Islam dan bahasa Arab.</p>
+    <p>Tapi ada satu peristiwa yang mengubah cara saya fikir. Anak pertama saya lahir dengan komplikasi jantung berlubang. Lapan bulan kami berkampung dalam wad. Dalam tempoh itu baru saya sedar: orang ramai datang sambut bayi, tapi jarang yang datang sambut ibu dan ayahnya.</p>
+  </div>
+</section>
+
+<section class="penutup">
+  <div class="wrap">
+    <h2>Nak mula dari mana?</h2>
+    <p>Ambil ebook percuma dulu. Kalau ada apa-apa nak tanya, saya balas sendiri.</p>
+    <div class="cta">
+      <a class="pautama" href="#ebook">Baca ebook percuma &rarr;</a>
+      <a class="pakedua" href="https://wa.me/601156844450?text=Assalamualaikum%2C%20saya%20dari%20laman%20web.">WhatsApp saya</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
